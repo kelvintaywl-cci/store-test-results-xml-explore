@@ -2,12 +2,8 @@
 <testsuite failures="1" errors="0" skipped="0" tests="1" time="18.698478" name="Propagate updated assessment configurations to existing assessment responses from Admin Assessments area">
 <testcase classname="Propagate updated assessment configurations to existing assessment responses from Admin Assessments area" name="A user can select an assessment with more than one version and propagate the configuration to existing responses" time="18.698478" file="/home/circleci/project/features/assessments/propagation.feature">
   <failure message="failed A user can select an assessment with more than one version and propagate the configuration to existing responses" type="failed">
-    <![CDATA[Scenario: A user can select an assessment with more than one version and propagate the configuration to existing responses
-
-Then the assessment response should be updated to link to the new version
-
-Message:
-]]>
+    <![CDATA[
+./features/assessments/propagation.feature:21:in `the assessment response should be updated to link to the new version']]>
   </failure>
   <system-out>
   </system-out>
