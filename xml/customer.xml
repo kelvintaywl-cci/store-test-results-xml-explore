@@ -48,12 +48,8 @@ Diff:[0m
 ./features/assessments/propagation.feature:21:in `the assessment response should be updated to link to the new version']]>
   </failure>
   <system-out>
-    <![CDATA[    [0;33mHTML screenshot: /home/circleci/cucumber/screenshots/screenshot_A-user-can-select-an-assessment-with-more-than-one-version-and-propagate-the-configuration-to-existing-responses_2024-01-22-09-58-02.957.html[0m
-    [0;33mImage screenshot: /home/circleci/cucumber/screenshots/screenshot_A-user-can-select-an-assessment-with-more-than-one-version-and-propagate-the-configuration-to-existing-responses_2024-01-22-09-58-02.957.png[0m
-]]>
   </system-out>
   <system-err>
-    <![CDATA[]]>
   </system-err>
 </testcase>
 </testsuite>
