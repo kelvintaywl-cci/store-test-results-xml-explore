@@ -24,3 +24,5 @@ workflows:
     jobs:
       - test:
           file: 'xml/case1.xml'
+      - test:
+          file: 'xml/customer.xml'
