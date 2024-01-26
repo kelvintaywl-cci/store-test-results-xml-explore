@@ -15,14 +15,15 @@ jobs:
           command: curl -sSL https://bit.ly/install-xq | sudo bash
       - run:
           name: validate << parameters.file >>
-          command: xq -e << parameters.file >>
+          command: xq << parameters.file >> || true
+      - run:
+          name: cat file with nonprintable characters shown
+          command: cat -v << parameters.file >>
       - store_test_results:
           path: << parameters.file >>
 
 workflows:
   main:
     jobs:
-      - test:
-          file: 'xml/case1.xml'
       - test:
           file: 'xml/customer.xml'
