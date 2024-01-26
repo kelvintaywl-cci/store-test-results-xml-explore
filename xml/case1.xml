@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="18.02" name="case1">
+<testcase classname="foobar1" time="18.02" file="/home/circleci/project/xml/case1.xml">
+  <failure message="CDATA" type="failed">
+    <![CDATA[
+]]>
+    <![CDATA[
+./features/tests1.rb `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.']]>
+  </failure>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testcase>
+</testsuite>

@@ -1,0 +1,26 @@
+version: 2.1
+
+jobs:
+  test:
+    parameters:
+      file:
+        type: string
+    docker:
+      - image: cimg/base:current
+    resource_class: medium
+    steps:
+      - checkout
+      - run:
+          name: Install xq
+          command: curl -sSL https://bit.ly/install-xq | sudo bash
+      - run:
+          name: validate << parameters.file >>
+          command: xq -e << parameters.file >>
+      - store_test_results:
+          path: << parameters.file >>
+
+workflows:
+  main:
+    jobs:
+      - test:
+          file: 'xml/case1.xml'
