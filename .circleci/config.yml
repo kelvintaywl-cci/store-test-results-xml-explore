@@ -1,4 +1,4 @@
-version: 2.1
+onversion: 2.1
 
 jobs:
   test:
@@ -24,7 +24,7 @@ jobs:
       - run:
           name: notify on fail
           command: echo notify
-          when: fail
+          when: on_fail
 
 workflows:
   main:
