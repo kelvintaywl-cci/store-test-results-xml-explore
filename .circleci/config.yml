@@ -23,8 +23,8 @@ jobs:
           path: << parameters.file >>
       - run:
           name: notify on fail
+          command: echo notify
           when: fail
-          command: echo "notify!!!!"
 
 workflows:
   main:
