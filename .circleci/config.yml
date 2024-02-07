@@ -21,6 +21,10 @@ jobs:
           command: cat -v << parameters.file >>
       - store_test_results:
           path: << parameters.file >>
+      - run:
+          name: notify on fail
+          when: fail
+          command: echo "notify!!!!"
 
 workflows:
   main:
